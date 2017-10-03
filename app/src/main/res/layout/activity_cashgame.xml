@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:paddingLeft="90dp">
+
+        <Button
+            android:id="@+id/qb"
+            android:layout_width="205dp"
+            android:layout_height="65dp"
+            android:text="Quarterback"/>
+
+        <Button
+            android:id="@+id/rb"
+            android:layout_width="205dp"
+            android:layout_height="65dp"
+            android:text="Runningback"/>
+
+        <Button
+            android:id="@+id/wr"
+            android:layout_width="205dp"
+            android:layout_height="65dp"
+            android:text="Wide Reciever"/>
+
+        <Button
+            android:id="@+id/te"
+            android:layout_width="205dp"
+            android:layout_height="65dp"
+            android:text="Tightend"/>
+
+        <Button
+            android:id="@+id/goback"
+            android:layout_width="205dp"
+            android:layout_height="65dp"
+            android:text="Go Back"/>
+
+    </LinearLayout>
+
+</LinearLayout>

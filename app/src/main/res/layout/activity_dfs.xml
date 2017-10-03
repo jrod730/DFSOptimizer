@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jrod730.dfsoptimizer.DFS">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="150dp"
+        android:paddingLeft="90dp">
+
+        <Button
+            android:id="@+id/cashgame"
+            android:layout_width="205dp"
+            android:layout_height="65dp"
+            android:text="Cash Game"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="226dp"/>
+
+        <Button
+            android:id="@+id/gpp"
+            android:layout_width="205dp"
+            android:layout_height="65dp"
+            android:text="GPP"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="128dp"
+            android:onClick="gpp"/>
+
+
+    </LinearLayout>
+</LinearLayout>
