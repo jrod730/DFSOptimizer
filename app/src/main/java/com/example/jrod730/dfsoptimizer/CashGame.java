@@ -26,8 +26,7 @@ public class CashGame extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cashgame);
 
-        PlayerDisplay.index = -1;
-        PlayerDisplay.cashGame = true;
+
 
         mQB = (Button) findViewById(R.id.qb);
         mRB = (Button) findViewById(R.id.rb);
@@ -39,7 +38,9 @@ public class CashGame extends AppCompatActivity{
             @Override
             public void onClick(View view) {
 
+
                 PlayerDisplay.index = 0;
+                PlayerDisplay.cashGame = true;
                 startActivity(new Intent(getBaseContext(), PlayerDisplay.class));
 
 
@@ -50,6 +51,7 @@ public class CashGame extends AppCompatActivity{
             public void onClick(View view) {
 
                 PlayerDisplay.index = 1;
+                PlayerDisplay.cashGame = true;
                 startActivity(new Intent(getBaseContext(), PlayerDisplay.class));
 
 
@@ -60,6 +62,7 @@ public class CashGame extends AppCompatActivity{
             public void onClick(View view) {
 
                 PlayerDisplay.index = 2;
+                PlayerDisplay.cashGame = true;
                 startActivity(new Intent(getBaseContext(), PlayerDisplay.class));
 
 
@@ -71,6 +74,7 @@ public class CashGame extends AppCompatActivity{
             public void onClick(View view) {
 
                 PlayerDisplay.index = 3;
+                PlayerDisplay.cashGame = true;
                 startActivity(new Intent(getBaseContext(), PlayerDisplay.class));
 
 

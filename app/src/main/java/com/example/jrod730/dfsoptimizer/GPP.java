@@ -25,7 +25,6 @@ public class GPP extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gpp);
 
-        PlayerDisplay.index = -1;
 
         mQB = (Button) findViewById(R.id.qb);
         mRB = (Button) findViewById(R.id.rb);
@@ -40,6 +39,7 @@ public class GPP extends AppCompatActivity {
             public void onClick(View view) {
 
                 PlayerDisplay.index = 0;
+                PlayerDisplay.cashGame = false;
                 startActivity(new Intent(getBaseContext(), PlayerDisplay.class));
 
 
@@ -50,6 +50,7 @@ public class GPP extends AppCompatActivity {
             public void onClick(View view) {
 
                 PlayerDisplay.index = 1;
+                PlayerDisplay.cashGame = false;
                 startActivity(new Intent(getBaseContext(), PlayerDisplay.class));
 
 
@@ -60,6 +61,7 @@ public class GPP extends AppCompatActivity {
             public void onClick(View view) {
 
                 PlayerDisplay.index = 2;
+                PlayerDisplay.cashGame = false;
                 startActivity(new Intent(getBaseContext(), PlayerDisplay.class));
 
 
@@ -70,6 +72,7 @@ public class GPP extends AppCompatActivity {
             public void onClick(View view) {
 
                 PlayerDisplay.index = 3;
+                PlayerDisplay.cashGame = false;
                 startActivity(new Intent(getBaseContext(), PlayerDisplay.class));
 
 

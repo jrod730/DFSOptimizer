@@ -17,36 +17,31 @@
             android:id="@+id/player1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="40dp"
-            />
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/player2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="40dp"
-            />
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/player3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="40dp"
-            />
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/player4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="40dp"
-            />
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/player5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="40dp"
-            />
+            android:textSize="30sp" />
 
     </LinearLayout>
 
