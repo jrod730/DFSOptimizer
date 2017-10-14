@@ -17,7 +17,7 @@ public class CashGame extends AppCompatActivity{
     private Button mRB;
     private Button mWR;
     private Button mTE;
-    private Button mgoBack;
+
 
 
 

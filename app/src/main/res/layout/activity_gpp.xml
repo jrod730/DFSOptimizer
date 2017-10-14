@@ -35,12 +35,6 @@
             android:layout_height="65dp"
             android:text="Tightend"/>
 
-        <Button
-            android:id="@+id/goback"
-            android:layout_width="205dp"
-            android:layout_height="65dp"
-            android:text="Go Back"/>
-
 
 
     </LinearLayout>

@@ -34,6 +34,10 @@ public class PlayerDisplay extends AppCompatActivity  {
 
 
 
+        private List<PlayerData> playerData = new ArrayList<>();
+        private List<PlayerData> playerPFF = new ArrayList<>();
+
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -44,8 +48,6 @@ public class PlayerDisplay extends AppCompatActivity  {
             readPlayerData();
         }
 
-        private List<PlayerData> playerData = new ArrayList<>();
-        private List<PlayerData> playerPFF = new ArrayList<>();
 
         private void readPlayerData(){
 
@@ -67,7 +69,7 @@ public class PlayerDisplay extends AppCompatActivity  {
                     playerData.add(sample);
 
                     Log.d("MyActivity", "Just created: " + sample);
-                    valuation();
+
 
                 }
             } catch (IOException e) {
@@ -92,7 +94,7 @@ public class PlayerDisplay extends AppCompatActivity  {
                     playerPFF.add(sample);
 
                     Log.d("MyActivity", "Just created: " + sample);
-                    valuation();
+
 
                 }
             } catch (IOException e) {
@@ -100,7 +102,7 @@ public class PlayerDisplay extends AppCompatActivity  {
                 e.printStackTrace();
             }
 
-
+            valuation();
         }
 
         private void valuation() {
@@ -110,35 +112,36 @@ public class PlayerDisplay extends AppCompatActivity  {
             PlayerData x;
 
             for (int i = 0; i < playerData.size(); i++) {
-                x = playerData.get(i);
 
+                x = playerData.get(i);
 
                 if (x.getPosition().equals(mPlayerPosition[index])) {
 
                     if (cashGame)
                     {
                         if ((x.getFpg() / x.getCost()) * 1000 > 3.0) {
-                            
+
                             mPlayer[j] = x.getName();
                             j++;
 
-                            if (j == 5)
-                                break;
+
 
                         } else {
 
                             for (int k = 0; k < playerPFF.size(); k++)
                             {
+                                if (j == 5)
+                                    break;
                                 PlayerData y = playerPFF.get(k);
                                 if (x.getName().contains(y.getName()) && (y.getFpg() / x.getCost()) * 1000 > 3.0)
                                 {
                                     mPlayer[j] = x.getName();
                                     j++;
 
-                                    if (j == 5)
-                                        break;
 
                                 }
+                                if (j == 5)
+                                    break;
 
                             }
 
@@ -152,8 +155,7 @@ public class PlayerDisplay extends AppCompatActivity  {
                                 mPlayer[j] = x.getName();
                                 j++;
 
-                                if (j == 5)
-                                    break;
+
                             } else {
 
                                 for (int k = 0; k < playerPFF.size(); k++) {
@@ -162,10 +164,11 @@ public class PlayerDisplay extends AppCompatActivity  {
                                         mPlayer[j] = x.getName();
                                         j++;
 
-                                        if (j == 5)
-                                            break;
+
 
                                     }
+                                    if (j == 5)
+                                        break;
 
                                 }
 
@@ -174,7 +177,8 @@ public class PlayerDisplay extends AppCompatActivity  {
                         }
                     }//end first condtional statement comparing positions
 
-
+                     if (j == 5)
+                        break;
                 }//end for loop through main data array list
 
             player1 = (TextView) findViewById(R.id.player1);
